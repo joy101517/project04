@@ -1,0 +1,147 @@
+/* font size */
+.text-xs {
+  font-size: $base-font-size*0.75 !important;
+}
+
+.text-s {
+  font-size: $base-font-size*0.875 !important;
+}
+
+.text-m {
+  font-size: $base-font-size !important;
+}
+
+.text-l {
+  font-size: $base-font-size*1.5 !important;
+}
+
+// text color
+.text-primary {
+  color: #2A8356 !important;
+}
+
+.text-primary-light {
+  color: #CDDDCD !important;
+}
+
+.text-primary-lighter {
+  color: #EDF4EE !important;
+}
+
+.text-secondary {
+  color: #121212 !important;
+}
+
+.text-secondary-light {
+  color: #0000009A !important;
+}
+
+.text-info {
+  color: #707070 !important;
+}
+
+.text-info-light {
+  color: #00000062 !important;
+}
+
+.text-light {
+  color: #FFFFFF !important;
+}
+
+.text-warning {
+  color: #E3006E !important;
+}
+
+// font
+.font-primary {
+  font-family: $font-primary !important;
+}
+
+.font-secondary {
+  font-family: $font-secondary;
+}
+
+// font weight
+.font-regular {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+// line height
+.lh-s {
+  line-height: 1.2;
+}
+
+.lh-m {
+  line-height: 1.5;
+}
+
+// text align
+.text-x-center {
+  text-align: center;
+}
+
+.text-x-right {
+  text-align: right;
+}
+
+.text-x-left {
+  text-align: left;
+}
+
+// text group
+.h2 {
+  font-size: $base-font-size*1.5;
+  line-height: 1.2;
+  font-weight: 400;
+
+  &-b {
+    font-size: $base-font-size*1.5;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+}
+
+.h3 {
+  font-size: $base-font-size;
+  line-height: 1.2;
+  font-weight: 400;
+
+  &-b {
+    font-size: $base-font-size;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  &-m {
+    font-size: $base-font-size;
+    line-height: 1.5;
+  }
+}
+
+.h4 {
+  font-size: $base-font-size*0.875;
+  line-height: 1.2;
+  font-weight: 400;
+
+  &-m {
+    font-size: $base-font-size*0.875;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+}
+
+.h5 {
+  font-size: $base-font-size * 0.75;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.subTitle {
+  font-size: $base-font-size * 1.25;
+  line-height: 1.2;
+  font-weight: 700;
+}

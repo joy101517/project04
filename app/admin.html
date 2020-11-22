@@ -1,0 +1,471 @@
+---
+title: admin
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<main class="main admin">
+  <div class="container">
+
+    <!-- header -->
+    <header class="py-8 mb-1 d-flex justify-content-between align-items-center">
+      <div class="d-flex flex-si-center">
+        <h2 class="mr-11 h2-b">Admin</h2>
+        <div class="d-flex align-items-center">
+          <button type="button" class="icon icon-modal" data-toggle="modal" data-target="#addAdmin">
+            <span class="material-icons text-primary">
+              add
+            </span>
+          </button>
+          <p class="h3-b">Add New Admin</p>
+        </div>
+      </div>
+      <div class="tool d-flex align-items-center">
+          <div class="icon px-2 py-2 mr-2">
+            <span class="material-icons">
+              search
+            </span>            
+          </div>
+          <div class="icon px-2 py-2">
+            <span class="material-icons">
+              notifications_active
+            </span>
+          </div>
+      </div>
+    </header>
+
+    <!-- admin list -->
+    <div class="wrap">
+      <table class="adminList mb-16">
+        <thead class="h3-b">
+          <tr class="adminListItem text-x-left" class="pb-1">
+            <th class="adminListTitle">
+              ID
+              <div class="icon d-inline ml-2 text-primary">
+                <span class="material-icons">
+                  arrow_downward
+                </span>
+              </div>
+            </th>
+            <th class="adminListTitle">Name</th>
+            <th class="adminListTitle">Email</th>
+            <th class="adminListTitle">Verified</th>
+            <th class="adminListTitle"></th>
+          </tr>
+        </thead>
+        <tbody class="h3">
+          <tr class="adminListItem">
+            <td class="py-4">#1</td>
+            <td class="py-4">Emir Wicks</td>
+            <td class="py-4">emir.wicks@mail.com</td>
+            <td class="py-4">Yes</td>
+            <td class="py-4 d-flex justify-content-end align-items-center">
+              <button type="button" class="icon icon-modal mr-6" data-toggle="modal" data-target="#view">
+                <span class="material-icons">
+                  visibility
+                </span>
+              </button>
+              <button type="button" class="icon icon-modal" data-toggle="modal" data-target="#adminEdit">
+                <span class="material-icons">
+                  edit
+                </span>
+              </button>
+            </td>
+          </tr>
+          <tr class="adminListItem">
+            <td class="py-4">#2</td>
+            <td class="py-4">Zaina Goldsmith</td>
+            <td class="py-4">zaina.goldsmith@mail.com</td>
+            <td class="py-4">Yes</td>
+            <td class="py-4 d-flex justify-content-end align-items-center">
+              <button type="button" class="icon icon-modal mr-6" data-toggle="modal" data-target="#view">
+                <span class="material-icons">
+                  visibility
+                </span>
+              </button>
+              <button type="button" class="icon icon-modal" data-toggle="modal" data-target="#adminEdit">
+                <span class="material-icons">
+                  edit
+                </span>
+              </button>
+            </td>
+          </tr>
+          <tr class="adminListItem">
+            <td class="py-4">#3</td>
+            <td class="py-4">Mahima Lopez</td>
+            <td class="py-4">Mahima.Lopez@mail.com</td>
+            <td class="py-4">Yes</td>
+            <td class="py-4 d-flex justify-content-end align-items-center">
+              <button type="button" class="icon icon-modal mr-6" data-toggle="modal" data-target="#view">
+                <span class="material-icons">
+                  visibility
+                </span>
+              </button>
+              <button type="button" class="icon icon-modal" data-toggle="modal" data-target="#adminEdit">
+                <span class="material-icons">
+                  edit
+                </span>
+              </button>
+            </td>
+          </tr>
+          <tr class="adminListItem">
+            <td class="py-4">$4</td>
+            <td class="py-4">Pharrell Murray</td>
+            <td class="py-4">Pharrell.Murray@mail.com</td>
+            <td class="py-4">Yes</td>
+            <td class="py-4 d-flex justify-content-end align-items-center">
+              <button type="button" class="icon icon-modal mr-6" data-toggle="modal" data-target="#view">
+                <span class="material-icons">
+                  visibility
+                </span>
+              </button>
+              <button type="button" class="icon icon-modal" data-toggle="modal" data-target="#adminEdit">
+                <span class="material-icons">
+                  edit
+                </span>
+              </button>
+            </td>
+          </tr>
+          <tr class="adminListItem">
+            <td class="py-4">#5</td>
+            <td class="py-4">Annika Mcbride</td>
+            <td class="py-4">Annika.Mcbride@mail.com</td>
+            <td class="py-4">Yes</td>
+            <td class="py-4 d-flex justify-content-end align-items-center">
+              <button type="button" class="icon icon-modal mr-6" data-toggle="modal" data-target="#view">
+                <span class="material-icons">
+                  visibility
+                </span>
+              </button>
+              <button type="button" class="icon icon-modal" data-toggle="modal" data-target="#adminEdit">
+                <span class="material-icons">
+                  edit
+                </span>
+              </button>
+            </td>
+          </tr>
+          <tr class="adminListItem">
+            <td class="py-4">#6</td>
+            <td class="py-4">Fatimah Clark</td>
+            <td class="py-4">Fatimah.Clark@mail.com</td>
+            <td class="py-4">Yes</td>
+            <td class="py-4 d-flex justify-content-end align-items-center">
+              <button type="button" class="icon icon-modal mr-6" data-toggle="modal" data-target="#view">
+                <span class="material-icons">
+                  visibility
+                </span>
+              </button>
+              <button type="button" class="icon icon-modal" data-toggle="modal" data-target="#adminEdit">
+                <span class="material-icons">
+                  edit
+                </span>
+              </button>
+            </td>
+          </tr>
+          <tr class="adminListItem">
+            <td class="py-4">#7</td>
+            <td class="py-4">Klaudia Rhodes</td>
+            <td class="py-4">Klaudia.Rhodes@mail.com</td>
+            <td class="py-4">Yes</td>
+            <td class="py-4 d-flex justify-content-end align-items-center">
+              <button type="button" class="icon icon-modal mr-6" data-toggle="modal" data-target="#view">
+                <span class="material-icons">
+                  visibility
+                </span>
+              </button>
+              <button type="button" class="icon icon-modal" data-toggle="modal" data-target="#adminEdit">
+                <span class="material-icons">
+                  edit
+                </span>
+              </button>
+            </td>
+          </tr>
+          <tr class="adminListItem">
+            <td class="py-4">#8</td>
+            <td class="py-4">Tillie Lucero</td>
+            <td class="py-4">Tillie.Lucero@mail.com</td>
+            <td class="py-4">Yes</td>
+            <td class="py-4 d-flex justify-content-end align-items-center">
+              <button type="button" class="icon icon-modal mr-6" data-toggle="modal" data-target="#view">
+                <span class="material-icons">
+                  visibility
+                </span>
+              </button>
+              <button type="button" class="icon icon-modal" data-toggle="modal" data-target="#adminEdit">
+                <span class="material-icons">
+                  edit
+                </span>
+              </button>
+            </td>
+          </tr>
+          <tr class="adminListItem">
+            <td class="py-4">#9</td>
+            <td class="py-4">Sabrina Stephenson</td>
+            <td class="py-4">Sabrina.Stephenson@mail.com</td>
+            <td class="py-4">Yes</td>
+            <td class="py-4 d-flex justify-content-end align-items-center">
+              <button type="button" class="icon icon-modal mr-6" data-toggle="modal" data-target="#view">
+                <span class="material-icons">
+                  visibility
+                </span>
+              </button>
+              <button type="button" class="icon icon-modal" data-toggle="modal" data-target="#adminEdit">
+                <span class="material-icons">
+                  edit
+                </span>
+              </button>
+            </td>
+          </tr>
+          <tr class="adminListItem">
+            <td class="py-4">#10</td>
+            <td class="py-4">Annie Smith</td>
+            <td class="py-4">Annie.Smith@mail.com</td>
+            <td class="py-4">Yes</td>
+            <td class="py-4 d-flex justify-content-end align-items-center">
+              <button type="button" class="icon icon-modal mr-6" data-toggle="modal" data-target="#view">
+                <span class="material-icons">
+                  visibility
+                </span>
+              </button>
+              <button type="button" class="icon icon-modal" data-toggle="modal" data-target="#adminEdit">
+                <span class="material-icons">
+                  edit
+                </span>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- footer -->
+      <footer class="adminFooter pb-8">
+        <ul class="d-flex justify-content-end">
+          <li class="icon">
+            <a href="#" class="pagination h3-m pIcon-a pIcon-before cell-lighter">
+              <span class="material-icons">
+              navigate_before
+            </span>
+          </a>
+          </li>
+          <li>
+            <a href="#" class="pagination h3-m cell-lighter">1</a>
+          </li>
+          <li>
+            <a href="#" class="pagination h3-m cell-lighter ">2</a>
+          </li>
+          <li>
+            <a href="#" class="pagination h3-m cell-lighter ">3</a>
+          </li>
+          <li class="icon">
+            <a href="#" class="pagination h3-m pIcon-a pIcon-next cell-lighter">
+              <span class="material-icons">
+              navigate_next
+            </span>
+          </a>
+          </li>
+        </ul>
+      </footer>
+
+      <!-- view -->
+      <div class="modal fade" id="view" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content p-8">
+            <div class="d-flex justify-content-between">
+              <div class="mr-6">
+                <img src="./assets/images/emir.jpeg" alt="photo" class="viewPhoto">
+              </div>
+            <ul class="pr-24">
+              <li class="h3 mb-2">#1</h3>
+              <li class="h3">Admin</li>
+              <li class="h2-b mb-2">Emir Wicks</li>
+              <li class="h4 mb-4 text-secondary-light">emir.wicks@mail.com</li>
+              <li class="point h4 py-1 px-2 text-secondary d-inline">verified</li>
+            </ul>
+            <div class="d-flex flex-column justify-content-between">
+              <button type="button" class="icon icon-modal close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"  class="material-icons">close</span>
+              </button>
+              <button type="button" class="expand icon-modal collapsed" data-toggle="collapse" data-target="#viewFooter" aria-expanded="false" aria-controls="viewFooter">
+                  <span class="material-icons text-primary">expand_more</span>
+                </button>
+            </div>
+            </div>
+            <div class="pt-8 text-x-right collapse" id="viewFooter">
+              <button type="button" class="btn btn-warning mr-4" data-dismiss="modal">Deactivate</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#adminEdit">Edit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- edit admin -->
+      <div class="modal fade" id="adminEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="d-flex justify-content-between p-8">
+              <h3 class="h2-b" id="exampleModalLongTitle">Edit Admin</h3>
+              <button type="button" class="icon icon-modal close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" class="material-icons">close</span>
+              </button>
+            </div>
+            <div class="px-8">
+              <div class="editBlock">
+                <h4 class="subTitle mb-2">Accout</h4>
+                <form action="">
+                  <div>
+                    <label for="name" class="h4 mb-1 d-block">Name</label>
+                    <input type="text" class="input-lighter edit-input d-block mb-4" name="name" id="name" placeholder="Emir Wicks" readonly>
+                  </div>
+                  <div>
+                    <label for="mail" class="h4 mb-1 d-block">Email</label>
+                    <input type="text" class="input-lighter edit-input d-block mb-6" name="mail" id="mail" placeholder="emir.wicks@mail.com" readonly>
+                  </div>
+                </form>
+              </div>
+              <div class="editBlock py-6">
+                <h4 class="subTitle mb-2">Verification</h4>
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                  <div class="d-flex align-items-center">
+                    <div class="icon mr-2">
+                      <span class="material-icons text-primary">
+                      check_circle
+                      </span>
+                    </div>
+                    <p class="h3-b">Verified</p>
+                  </div>
+                  <p class="h4">20200/4/12</p>
+                </div>
+                <input type="submit" class="btn btn-disable edit-input py-4" name="VerificationMail" 
+                value="Send Verification Mail" disabled>
+              </div>
+              <div class="editBlock py-6">
+                <h4 class="subTitle mb-2">Access Level</h4>
+                <select name="access" id="access" class="edit-input h3 p-4">
+                  <option value="admin">Admin</option>
+                </select>
+              </div>
+              <div class="editBlock py-6">
+                <h4 class="subTitle mb-2">Custom Access</h4>
+                <form action="">
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" name="Lecture" id="Lecture" class="mr-2">
+                    <label class="h3" for="Lecture">Lecture</label>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" name="Coupon" id="Coupon" class="mr-2">
+                    <label class="h3" for="Coupon">Coupon</label>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" name="Message" id="Message" class="mr-2">
+                    <label class="h3" for="Message">Message</label>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" name="Setting" id="Setting" class="mr-2">
+                    <label class="h3" for="Setting">Setting</label>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" name="task menu" id="task menu" class="mr-2">
+                    <label class="h3" for="task menu">task menu</p>
+                  </div>
+                </form>
+              </div>
+              <div class="py-6 mb-12">
+                <h4 class="subTitle mb-2">Deactivate Account</h4>
+                <div class="d-flex align-items-center mb-4">
+                  <div class="icon mr-2">
+                    <span class="material-icons text-warning">
+                      report_problem
+                    </span>
+                  </div>
+                  <p class="h3-b text-warning">This cannot be undone!</p>
+                </div>
+                <input type="submit" class="btn btn-warning edit-input py-4" name="deactivateAccount" 
+                value="Deactivate This Account">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Update</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- add admin -->
+      <div class="modal fade" id="addAdmin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="d-flex justify-content-between p-8">
+              <h3 class="h2-b" id="exampleModalLongTitle">New Admin</h3>
+              <button type="button" class="icon icon-modal close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" class="material-icons">close</span>
+              </button>
+            </div>
+            <div class="px-8">
+              <div class="editBlock">
+                <h4 class="subTitle mb-2">Accout</h4>
+                <form action="">
+                  <div>
+                    <label for="name" class="h4 mb-1 d-block">Name</label>
+                    <input type="text" class="input-light edit-input d-block mb-4" name="name" id="name">
+                  </div>
+                  <div>
+                    <label for="mail" class="h4 mb-1 d-block">Email</label>
+                    <input type="text" class="input-light edit-input d-block mb-6" name="mail" id="mail">
+                  </div>
+                </form>
+              </div>
+              <div class="editBlock py-6">
+                <h4 class="subTitle mb-2">Verification</h4>
+                <div class="d-flex align-items-center mb-4">
+                  <div class="icon mr-2">
+                    <span class="material-icons text-warning">
+                    report_problem
+                    </span>
+                  </div>
+                  <p class="h3-b">Unverified</p>
+                </div>
+                <input type="submit" class="btn btn-light edit-input py-4" name="VerificationMail" 
+                value="Send Verification Mail">
+              </div>
+              <div class="editBlock py-6">
+                <h4 class="subTitle mb-2">Access Level</h4>
+                <select name="access" id="access" class="edit-input h3 p-4">
+                  <option value="admin">Admin</option>
+                </select>
+              </div>
+              <div class="py-6">
+                <h4 class="subTitle mb-2">Custom Access</h4>
+                <form action="">
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" name="Lecture" id="Lecture" class="mr-2">
+                    <label class="h3" for="Lecture">Lecture</label>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" name="Coupon" id="Coupon" class="mr-2">
+                    <label class="h3" for="Coupon">Coupon</label>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" name="Message" id="Message" class="mr-2">
+                    <label class="h3" for="Message">Message</label>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" name="Setting" id="Setting" class="mr-2">
+                    <label class="h3" for="Setting">Setting</label>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" name="task menu" id="task menu" class="mr-2">
+                    <label class="h3" for="task menu">task menu</p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Update</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,67 @@
+// admin
+.adminList {
+  width: 100%;
+}
+
+.adminListItem {
+  border-bottom: 1px solid $primary-light;
+}
+
+.adminListTitle {
+  border-bottom: 1px solid $secondary;
+}
+
+.adminFooter {
+  .icon {
+    border-bottom: 0;
+  }
+
+  .icon:hover {
+    border-bottom: 0;
+  }
+}
+
+.pIcon-before {
+  border-radius: 2px 0 0 2px;
+}
+
+.pIcon-next {
+  border-radius: 0 2px 2px 0;
+}
+
+.pagination {
+  color: $primary;
+  padding: $spacer*2 $spacer*3;
+  transition: .5s;
+}
+
+.pIcon-a {
+  line-height: 1.2;
+  padding-left: $spacer;
+  padding-right: $spacer;
+}
+
+.pagination:hover,
+.pagination:focus {
+  background-color: $primary;
+  color: $light;
+}
+
+// view
+.expand[aria-expanded="true"] .material-icons {
+  transform: rotate(180deg);
+}
+
+.viewPhoto {
+  width: 141px;
+  height: 141px;
+}
+
+// edit
+.editBlock {
+  border-bottom: 1px solid $primary-light;
+}
+
+.modal-footer {
+  border: 0;
+}
