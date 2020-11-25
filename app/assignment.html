@@ -14,24 +14,24 @@ current: index
         <h2 class="mr-11 h2-b">Assignment</h2>
         <div class="d-flex align-items-center">
           <p class="mr-2 h3-b">All Courses</p>
-          <div class="icon">
+          <a href="#" class="icon">
             <span class="material-icons text-primary">
             keyboard_arrow_down
             </span>
-          </div>
+          </a>
         </div>
       </div>
       <div class="tool d-flex align-items-center">
-          <div class="icon px-2 py-2 mr-2">
+          <a href="#" class="icon px-2 py-2 mr-2">
             <span class="material-icons">
               search
             </span>            
-          </div>
-          <div class="icon px-2 py-2">
+          </a>
+          <a href="#" class="icon px-2 py-2">
             <span class="material-icons">
               notifications_active
             </span>
-          </div>
+          </a>
       </div>
     </header>
 
@@ -41,11 +41,11 @@ current: index
       <aside class="sidebar">
         <div class="d-flex align-items-center mb-2">
           <h3 class="mr-2 h3-b">All (4)</h3>
-          <div class="icon">
+          <a href="#" class="icon">
             <span class="material-icons text-primary">
               keyboard_arrow_down
             </span>
-          </div>
+          </a>
         </div>
         <ul>
           <li class="articleItem d-flex justify-content-between cell-light px-3 py-3">
@@ -107,11 +107,11 @@ current: index
                 Please check this file for me, thanks!
               </h3>
             </div>
-            <div class="icon">
+            <a href="#" class="icon">
               <span class="material-icons">
                 more_vert
               </span>
-            </div>
+            </a>
           </div>
           <div class="px-4 mb-4 d-flex align-items-center">
             <div class="mr-2"><img src="assets/images/emilywang.jpeg" alt="author photo" class="authorPhoto"></div>
@@ -125,11 +125,9 @@ current: index
               Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="point">div</span> is bigger than the height of the <span class="point">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>What is the gap or extra space below image?
             </p>
             <button class="attachFile py-2 pl-3 pr-4 d-flex h3-b cell-primary-lighter">
-              <div class="icon mr-2">
-                <span class="material-icons">
+                <span class="material-icons mr-2">
                   attach_file
                 </span>
-              </div>
               HW-2-David.zip
             </button>
           </div>
@@ -148,16 +146,16 @@ current: index
               </div>
             </div>
             <div class="d-flex align-items-center">
-              <div class="icon mr-6">
+              <a href="#" class="icon mr-6">
                 <span class="material-icons">
                   star_border
                 </span>              
-              </div>
-              <div class="icon">
+              </a>
+              <a href="#" class="icon">
                 <span class="material-icons">
                 edit
                 </span> 
-              </div>
+              </a>
             </div>
           </div>
           <div class="articleContent  ml-16 mr-8">
@@ -165,9 +163,10 @@ current: index
               Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br>
               <br> 
               You can: 　<br> 
-              <br> 
-              • adjust the <span class="point">vertical-align</span> of the image to position it elsewhere (e.g. the middle ) <br> 
-              • change the <span class="point  h4">display</span> so it isn’t inline.
+              <ul class="h4-m">
+                <li class="list">adjust the <span class="point">vertical-align</span> of the image to position it elsewhere (e.g. the middle )</li> 
+                <li class="list">change the <span class="point  h4">display</span> so it isn’t inline.</li>
+              </ul>
             </p>
           </div>
         </div>
@@ -175,16 +174,16 @@ current: index
         <!-- footer -->
         <div class="mb-8 d-flex justify-content-between align-items-center">
           <div class="d-flex">
-            <div class="icon mr-6">
+            <a href="#" class="icon mr-6">
               <span class="material-icons">
                 navigate_before
               </span>
-            </div>
-            <div class="icon mr-6">
+            </a>
+            <a class="icon mr-6">
               <span class="material-icons">
                 navigate_next
               </span>
-            </div>
+            </a>
           </div>
           <div class="d-flex">
             <a class="btn btn-light mr-4">
@@ -202,41 +201,41 @@ current: index
                 <option value="body text">Body Text</option>
                 <option value="arial">arial</option>
               </select>
-              <div class="icon mr-6">
+              <a class="icon mr-6">
                 <span class="material-icons">
                   format_bold
                 </span>
-              </div>
-              <div class="icon mr-6">
+              </a>
+              <a class="icon mr-6">
                 <span class="material-icons">
                   format_italic
                 </span>
-              </div>
-              <div class="icon mr-6">
+              </a>
+              <a class="icon mr-6">
                 <span class="material-icons">
                   format_list_bulleted
                 </span>
-              </div>
-              <div class="icon mr-6">
+              </a>
+              <a class="icon mr-6">
                 <span class="material-icons">
                   format_list_numbered
                 </span>
-              </div>
-              <div class="icon mr-6">
+              </a>
+              <a class="icon mr-6">
                 <span class="material-icons">
                   insert_photo
                 </span>
-              </div>
-              <div class="icon mr-6">
+              </a>
+              <a class="icon mr-6">
                 <span class="material-icons">
                   insert_link
                 </span>
-              </div>
-              <div class="icon mr-6">
+              </a>
+              <a class="icon mr-6">
                 <span class="material-icons">
                   code
                 </span>
-              </div>
+              </a>
             </div>
             <form action="" class="replytyping">
               <textarea name="replyContent" id="replyContent"  class="replyContent pt-4 pl-6 font-primary h3-b text-info-light" placeholder="Reply an answer..."></textarea>
