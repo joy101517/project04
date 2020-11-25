@@ -17,20 +17,18 @@
 
 .menu {
   color: $secondary;
+  border-left: 4px solid transparent;
 }
 
-.menu:hover .menuItem {
+.menu:hover {
   background-color: $primary-light;
 }
 
-.menu:active .menuItem {
+.menu:active {
   color: $primary;
   border-left: 4px solid $primary;
 }
 
-.menuItem {
-  border-left: 4px solid transparent;
-}
 
 .currentUser {
   position: relative;
