@@ -4838,17 +4838,15 @@ a.text-secondary:focus {
   text-indent: 101%; }
 
 .menu {
-  color: #121212; }
+  color: #121212;
+  border-left: 4px solid transparent; }
 
-.menu:hover .menuItem {
+.menu:hover {
   background-color: #CDDDCD; }
 
-.menu:active .menuItem {
+.menu:active {
   color: #2A8356;
   border-left: 4px solid #2A8356; }
-
-.menuItem {
-  border-left: 4px solid transparent; }
 
 .currentUser {
   position: relative;
@@ -4861,9 +4859,6 @@ a.text-secondary:focus {
 
 .welcome {
   line-height: 100vh; }
-
-.wrap {
-  width: 100%; }
 
 .sidebar {
   width: 320px; }
@@ -4897,13 +4892,23 @@ a.text-secondary:focus {
   border-bottom: 1px solid #CDDDCD; }
 
 .attachFile {
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+  .attachFile:hover {
+    background-color: #2A8356;
+    color: #FFFFFF; }
 
 .commentCard .articleContent {
   border-bottom: 0; }
 
 .commentCard {
   border-top: 0; }
+
+.list {
+  list-style: disc;
+  list-style-position: inside; }
 
 .replyArea {
   position: absolute;
